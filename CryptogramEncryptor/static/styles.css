@@ -1,7 +1,5 @@
-/* Importing Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
-/* Base Styling */
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -14,12 +12,10 @@ body {
   transition: background 0.5s ease-in-out;
 }
 
-/* Dark Mode */
 body.dark-mode {
   background: linear-gradient(135deg, #222, #444);
 }
 
-/* Main Container */
 .container {
   width: 400px;
   background: rgba(255, 255, 255, 0.15);
@@ -33,35 +29,34 @@ body.dark-mode {
   transition: all 0.5s ease;
 }
 
-/* Header */
 h1 {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 28px;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.8;
+  margin-bottom: 30px;
 }
 
-/* Dark Mode Toggle - Properly Spaced */
 .toggle-container {
   position: absolute;
   top: 15px;
   right: 15px;
   display: flex;
   align-items: center;
-  gap: 10px;  /* Added spacing */
+  gap: 10px;
 }
 
 .toggle-container span {
   font-size: 14px;
   color: #fff;
   font-weight: 500;
-  margin-left: 5px;  /* Ensures text is spaced from the switch */
+  margin-left: 5px;
 }
 
-/* Dark Mode Switch */
 .switch {
   position: relative;
   width: 50px;
@@ -104,20 +99,17 @@ input:checked + .slider:before {
   transform: translateX(25px);
 }
 
-/* Form Styling */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-/* Form Group */
 .form-group {
   text-align: left;
   font-size: 16px;
 }
 
-/* Radio Buttons */
 .radio-group {
   display: flex;
   gap: 10px;
@@ -143,7 +135,23 @@ input[type="radio"]:checked + label {
   color: #333;
 }
 
-/* File Input */
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+select:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
 input[type="file"] {
   padding: 10px;
   background: rgba(255, 255, 255, 0.2);
@@ -153,7 +161,6 @@ input[type="file"] {
   cursor: pointer;
 }
 
-/* Button */
 button {
   background: #4a90e2;
   color: white;
